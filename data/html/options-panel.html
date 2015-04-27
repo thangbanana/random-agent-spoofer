@@ -140,8 +140,10 @@
 	<h3 id="script_injection_title" class="trigger">Script Injection Options</h3>
 
 	<div class="expandable">
+		<p class="notice">The options in this section are only available in the github version</p>
+
 		<p>
-			<input type="checkbox" id="scriptinjection"data-invertvalue="false" data-prefname="extensions.agentSpoof.scriptInjection" />
+			<input type="checkbox" id="scriptinjection" disabled="disabled" data-invertvalue="false" data-prefname="extensions.agentSpoof.scriptInjection" />
 			<label for="scriptinjection">Enable script injection</label>
 		</p>
 
@@ -149,7 +151,7 @@
 
 		<p>
 			<label for="tzdd">Time zone spoofing (UTC):</label>
-			<select id="tzdd" class="dd" data-prefname="extensions.agentSpoof.tzOffset">
+			<select id="tzdd" class="dd" data-prefname="extensions.agentSpoof.tzOffset" disabled="disabled">
 				<option value="default">Default</option>
 				<option value="random">Random</option>
 				<option value="12">-12:00</option>
@@ -197,7 +199,7 @@
 
 		<p>
 			<label for="screendd">Screen size spoofing :</label>
-			<select id="screendd" class="dd" data-prefname="extensions.agentSpoof.screenSize">
+			<select id="screendd" class="dd" data-prefname="extensions.agentSpoof.screenSize" disabled="disabled">
 				<option value="default">Default</option>
 				<option value="random">Random</option>
 				<option value="profile">Profile</option>
@@ -226,17 +228,17 @@
 		</p>
 
 		<p>
-			<input type="checkbox" id="winname"data-invertvalue="false" data-prefname="extensions.agentSpoof.windowName" />
+			<input type="checkbox" id="winname"data-invertvalue="false" data-prefname="extensions.agentSpoof.windowName" disabled="disabled" />
 			<label for="winname">Protect window.name</label>
 		</p>
 
 		<p>
-			<input type="checkbox" id="canvas" data-invertvalue="false" data-prefname="extensions.agentSpoof.canvas" />
+			<input type="checkbox" id="canvas" data-invertvalue="false" data-prefname="extensions.agentSpoof.canvas" disabled="disabled" />
 			<label for="canvas">Disable canvas support</label>
 		</p>
 
 		<p>
-			<input type="checkbox" id="tab_history" data-invertvalue="false" data-prefname="extensions.agentSpoof.limitTab" />
+			<input type="checkbox" id="tab_history" data-invertvalue="false" data-prefname="extensions.agentSpoof.limitTab" disabled="disabled" />
 			<label for="tab_history">Limit tab history to 2</label>
 		</p>
 	</div>
@@ -374,8 +376,11 @@
 <!-- "whitelist" tab -->
 
 <div id="whitelist_tab" class="hidden">
+
+	<p class="notice">The options in this section are only available in the github version</p>
+
 	<p id="whitelist_checkbox_line">
-		<input type="checkbox" id="whitelist_enabled" data-invertvalue="true" data-prefname="extensions.agentSpoof.whiteListDisabled" />
+		<input type="checkbox" id="whitelist_enabled" data-invertvalue="true" data-prefname="extensions.agentSpoof.whiteListDisabled" disabled="disabled" />
 		<label for="whitelist_enabled">Enable whitelist support</label>
 	</p>
 
